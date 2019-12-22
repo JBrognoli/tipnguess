@@ -1,31 +1,28 @@
-# Projeto base para construção de aplicações frontend do Labtic
-
-## Project setup
+# Tip n' Guess
 
 ```
-yarn install
+A friendly game made to be played locally between friends.
+It's a step by step game, which each step has its own difficulty, each step's goal is to guess five words that your partner will help you hit it by giving you one word tips about it. =)
 ```
 
-### Compiles and hot-reloads for development
+## tipnguess workflow:
 
 ```
-yarn run serve
-```
-
-### Compiles and minifies for production
+run: yarn install then yarn serve (compile and hot-reload for development)
+run: yarn build (compiles and minifies for production)
 
 ```
-yarn run build
-```
 
-### Project workflow
+### src folders:
 
 ```
 assets: svgs and images
-components: where the components of the application are created, both base and specify components.
-modules: vuex modules of the aplication, where you keep their global store and share information between components.
-plugins: plugins such as vuetify(used to define its uses)
-services: folder to keep the api calls, separated by modules.
-utils: place to keep funcionalities that might be use anywhere of the project.
-views: main place to keep the views of the aplication, used mainly by routes.
+components: where the components of the application are created, both base and specific components.
+i18n: internationalization folder, keep the project's locales used by vuetify.
+modules: vuex modules of the aplication, containing global store that share information between components.
+plugins: plugins such as vuetify(used to define its uses).
+router: instances the vue router, defining its mode, base and routes.
+services: contains the api calls, divided by modules.
+utils: contains funcionalities that can be used anywhere inside the project.
+views: main place to keep the views of the aplication, used mainly by router's routes.
 ```
