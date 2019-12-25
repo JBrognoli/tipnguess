@@ -1,17 +1,21 @@
 <template>
-  <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-container>
+    <v-divider class="white" />
+    <v-row justify="center" align="center">
+      <h1 class="white--text font-weight-light">TIP N' GUESS</h1>
+    </v-row>
+    <v-divider class="white" />
+    <MainMenu />
+    <ChoosePlayers />
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    MainMenu: () => import('@/components/MainMenu.vue'),
+    ChoosePlayers: () => import('@/components/ChoosePlayers.vue'),
   },
 }
 </script>
