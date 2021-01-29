@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
 
+import colors from 'vuetify/lib/util/colors'
+
 Vue.use(Vuetify)
 
 export default new Vuetify({
@@ -18,6 +20,7 @@ export default new Vuetify({
         clear: '#5C347D',
         shadow: '#19022C',
         darkness: '#0D0116',
+        title: 'white',
       },
     },
   },

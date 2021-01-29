@@ -2,10 +2,10 @@
   <v-app>
     <v-img
       v-if="this.$route.name === 'home'"
-      src="https://wallpaperaccess.com/full/89738.jpg"
+      src="./assets/rosedBackground.jpg"
       aspect-ratio="1"
     >
-      <v-content>
+      <v-content class="fluid fill-height">
         <router-view />
       </v-content>
     </v-img>

@@ -1,5 +1,5 @@
 <template>
-  <v-row class="mt-8">
+  <v-row fill-height fluid>
     <v-col cols="12">
       <BaseButton @click="handlePlay">Jogar</BaseButton>
     </v-col>
