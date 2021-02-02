@@ -87,7 +87,7 @@ export default {
   name: 'ChoosePlayers',
   data: () => ({
     valid: false,
-    player1: '',
+    player1: 'Batata',
     player2: '',
     color: '',
     colors: [
